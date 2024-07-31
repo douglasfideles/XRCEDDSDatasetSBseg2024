@@ -12,6 +12,10 @@ O artefato consiste em dois conjuntos de dados (datasets) em formato CSV, gerado
 
 * monitory_envio-rede-isolada.csv: Contém dados coletados em um cenário sem acesso à internet, livre de interferências de tráfego externo.
 
+## Cenário de Teste
+
+Para a prova de conceito, o cenário implementado é uma versão simplificada do cenário completo. Ele consiste em três nós sensores ESP8266, um agente em um notebook Windows e um notebook adicional para monitoramento e captura de dados. Os três ESP8266 atuam como nós sensores, enviando dados simulados de data/hora, temperatura e umidade para o agente, que executa o Micro XRCE-DDS Agent e publica esses dados no tópico DDS "SensorData". O monitoramento e a coleta de dados são realizados com o Wireshark e os dados coletados são processados pelo CICFlowMeter.
+
 
 ## Estrutura dos Dados
 
